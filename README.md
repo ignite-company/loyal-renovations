@@ -29,7 +29,7 @@ Configure these **server-side only** Vercel environment variables on project `lo
 
 - `RESEND_API_KEY`: API key from the Resend email delivery account.
 - `LEAD_FROM_EMAIL`: authorized, domain-verified sender, e.g. `Loyal Renovations <inquiries@yourdomain.com>`. Use a domain controlled and verified by the business.
-- `LEAD_TO_EMAILS`: both the user's inbox and the construction owner's inbox, comma separated, e.g. `asher.igniteco@gmail.com,owner@yourdomain.com` (replace the example with the real owner email).
+- `LEAD_TO_EMAILS`: the inquiry inbox `contact@ignitellc.co`. Additional addresses can be added later if desired.
 
 The endpoint verifies required contact fields, uses a honeypot, escapes HTML, and sends to the addresses above only after the email provider confirms acceptance. Test delivery on production using inboxes for both recipients and check spam folders before promoting the site. For production-grade bot prevention, add rate limiting or a verified CAPTCHA service in a later iteration.
 
