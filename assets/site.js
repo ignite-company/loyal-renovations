@@ -28,7 +28,7 @@ document.querySelectorAll(".inquiry-form").forEach(form=>form.addEventListener("
   let data={};try{data=await response.json();}catch(_){}
   if(!response.ok||!data.ok)throw Error(data.message||"Your request could not be sent at this time.");
   form.reset();feedback.textContent="Your request has been sent. Our team will be in touch.";feedback.className="form-feedback visible success";
- }catch(err){feedback.textContent="We couldn't send your request just now. Please email asher.igniteco@gmail.com directly.";feedback.className="form-feedback visible error";}
+ }catch(err){feedback.textContent="We couldn't send your request just now. Please email contact@ignitellc.co directly.";feedback.className="form-feedback visible error";}
  finally{btn.disabled=false;}
 }));
 const sections=Array.from(document.querySelectorAll("main section[id]"));
