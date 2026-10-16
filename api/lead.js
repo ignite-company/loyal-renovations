@@ -16,7 +16,7 @@ module.exports = async (req,res) => {
  if(!name||!email||!phone||!location||!allowed.has(service)||!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)){return res.status(422).json({ok:false,message:"Please complete all required fields"});}
  const apiKey=process.env.RESEND_API_KEY,from=process.env.LEAD_FROM_EMAIL;
  const recipients=String(process.env.LEAD_TO_EMAILS||"").split(",").map(x=>x.trim()).filter(Boolean);
- if(!apiKey||!from||recipients.length<2){return res.status(503).json({ok:false,message:"Inquiry email delivery is not yet configured"});}
+ if(!apiKey||!from||recipients.length<1){return res.status(503).json({ok:false,message:"Inquiry email delivery is not yet configured"});}
  const esc=s=>s.replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;").replace(/"/g,"&quot;").replace(/'/g,"&#39;");
  const fields=[["Name",name],["Email",email],["Phone",phone],["Project location",location],["Project type",service],["Project details",details||"Not provided"]];
  const markup='<div style="font-family:Arial,sans-serif;color:#152234;max-width:640px;margin:auto"><h1 style="font-size:24px">New Loyal Renovations inquiry</h1>'+fields.map(([k,v])=>'<p><strong>'+esc(k)+':</strong><br>'+esc(v).replace(/\n/g,"<br>")+'</p>').join("")+'</div>';
