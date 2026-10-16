@@ -47,8 +47,8 @@
     .btn .arrow{font-size:19px;line-height:1}
     .site-header{position:absolute;inset:0 0 auto;z-index:30;color:#fff}
     .nav{min-height:103px;display:flex;justify-content:space-between;align-items:center;gap:30px;border-bottom:1px solid rgba(255,255,255,.22)}
-    .brand{flex:none;display:flex;align-items:center;gap:13px;background:rgba(249,247,242,.96);padding:10px 14px;border:1px solid rgba(255,255,255,.28)}
-    .brand img{width:135px;height:52px;object-fit:contain}
+    .brand{flex:none;display:flex;align-items:center;gap:13px;background:transparent;padding:0;border:0}
+    .brand img{width:135px;height:52px;object-fit:contain;filter:brightness(0) invert(1) drop-shadow(0 2px 5px rgba(0,0,0,.25))}
     .nav-links{display:flex;align-items:center;gap:clamp(15px,2vw,29px);padding:0;margin:0;list-style:none}
     .nav-links a{position:relative;font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;font-weight:700;transition:color .2s}
     .nav-links a:hover,.nav-links a.active{color:var(--gold2)}
@@ -173,7 +173,7 @@
     .footer{background:#0b1724;color:#fff;border-top:1px solid rgba(255,255,255,.1);padding:53px 0 30px}
     .footer-top{display:flex;justify-content:space-between;align-items:center;gap:35px;padding-bottom:52px}
     .footer-brand{display:flex;align-items:center;gap:17px}
-    .footer-brand img{height:66px;width:170px;object-fit:contain;background:var(--stone);padding:8px 12px}
+    .footer-brand img{height:66px;width:170px;object-fit:contain;background:transparent;padding:0;filter:brightness(0) invert(1)}
     .footer-tagline{font-size:12px;line-height:1.75;color:rgba(255,255,255,.62);max-width:320px;margin:0}
     .footer-nav{display:flex;gap:27px;flex-wrap:wrap}
     .footer-nav a{font-size:10px;letter-spacing:.12em;text-transform:uppercase;color:rgba(255,255,255,.75)}
@@ -217,7 +217,7 @@
       html{scroll-padding-top:75px}
       .container{width:calc(100% - 40px)}
       .nav{min-height:76px;gap:10px}
-      .brand{padding:7px 9px}
+      .brand{padding:0}
       .brand img{width:106px;height:43px}
       .nav-actions .btn{display:none}
       .menu-toggle{width:43px;height:43px}
