@@ -4,318 +4,41 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#101d2c">
-  <meta name="description" content="Loyal Renovations brings thoughtful planning, intentional design, and detailed craftsmanship to kitchens, bathrooms, and whole-home renovations. Start a conversation about your space.">
+  <meta name="description" content="Explore thoughtful kitchen, bathroom, and whole-home remodeling with Loyal Renovations. Discover renovation services, project planning, and ways to get started.">
+  <link rel="canonical" href="https://loyal-renovations.vercel.app/">
+  <meta name="robots" content="index,follow">
   <meta property="og:type" content="website">
-  <meta property="og:title" content="Loyal Renovations | Beautifully Considered. Built to Last.">
+  <meta property="og:title" content="Loyal Renovations | Kitchen, Bath &amp; Home Remodeling">
+  <meta property="og:url" content="https://loyal-renovations.vercel.app/">
+  <meta property="og:site_name" content="Loyal Renovations">
   <meta property="og:description" content="Thoughtful residential renovations with a focus on the details that make a house feel like home.">
   <meta property="og:image" content="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1200&q=80">
   <meta name="color-scheme" content="light">
-  <title>Loyal Renovations | Beautifully Considered. Built to Last.</title>
+  <meta name="twitter:card" content="summary_large_image">
+  <title>Loyal Renovations | Kitchen, Bath &amp; Home Remodeling</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="preconnect" href="https://images.unsplash.com">
   <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;500;600;700;800&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="icon" href="https://assets.cdn.filesafe.space/bF1dT8IAVuvat84LkAVe/media/6ad22a46989628c77a1f730b.png" type="image/png">
-  <style>
-    :root{--navy:#101d2c;--navy2:#162739;--navy3:#213346;--gold:#c39a59;--gold2:#e0b979;--stone:#f3f0ea;--cream:#fcfaf6;--ink:#192737;--muted:#61707a;--line:rgba(16,29,44,.13);--white:#fff;--font-display:"Barlow Condensed",Impact,"Arial Narrow",sans-serif;--font-body:"DM Sans",Arial,sans-serif;--max:1330px}
-    *,*::before,*::after{box-sizing:border-box}
-    html{scroll-behavior:smooth;scroll-padding-top:88px}
-    body{margin:0;background:var(--cream);color:var(--ink);font-family:var(--font-body);-webkit-font-smoothing:antialiased}
-    body.locked{overflow:hidden}
-    a{color:inherit;text-decoration:none}
-    button,input,select,textarea{font:inherit}
-    button{cursor:pointer}
-    img{display:block;max-width:100%}
-    ::selection{background:var(--gold);color:var(--navy)}
-    :focus-visible{outline:3px solid var(--gold2);outline-offset:4px}
-    .container{width:min(var(--max),calc(100% - 104px));margin-inline:auto}
-    .eyebrow{font-size:11px;letter-spacing:.25em;text-transform:uppercase;font-weight:700;line-height:1.5}
-    .eyebrow.gold{color:var(--gold)}
-    .eyebrow.line{display:flex;align-items:center;gap:15px}
-    .eyebrow.line::before{content:"";width:30px;height:1px;background:currentColor;flex:none}
-    .display{font-family:var(--font-display);font-weight:700;text-transform:uppercase;letter-spacing:-.018em;line-height:.91;margin:0}
-    .section-title{font-size:clamp(54px,6vw,96px)}
-    .intro-copy{font-size:clamp(16px,1.5vw,19px);line-height:1.85;color:var(--muted)}
-    .btn{display:inline-flex;align-items:center;justify-content:center;gap:24px;border:1px solid transparent;padding:18px 25px;min-height:54px;font-size:12px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;transition:background .25s,color .25s,border-color .25s,transform .25s;white-space:nowrap}
-    .btn:hover{transform:translateY(-2px)}
-    .btn-gold{background:var(--gold);color:#0f1a26}
-    .btn-gold:hover{background:var(--gold2)}
-    .btn-outline{border-color:rgba(255,255,255,.58);color:#fff;background:rgba(255,255,255,.03)}
-    .btn-outline:hover{background:#fff;color:var(--navy)}
-    .btn-navy{background:var(--navy);color:#fff}
-    .btn-navy:hover{background:var(--navy3)}
-    .btn .arrow{display:inline-flex;align-items:center;line-height:1}.ui-icon{width:18px;height:18px;display:block;flex-shrink:0;fill:none;stroke:currentColor;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}.link-arrow .ui-icon,.service-link .ui-icon{width:17px;height:17px}.modal-close .ui-icon{width:20px;height:20px;margin:auto}.contact-detail .ui-icon{width:14px;height:14px;display:inline-block;vertical-align:middle;margin-left:5px}
-    .site-header{position:absolute;inset:0 0 auto;z-index:30;color:#fff}
-    .nav{min-height:103px;display:flex;justify-content:space-between;align-items:center;gap:30px;border-bottom:1px solid rgba(255,255,255,.22)}
-    .brand{flex:none;display:flex;align-items:center;gap:13px;background:transparent;padding:0;border:0}
-    .brand img{width:135px;height:52px;object-fit:contain;filter:brightness(0) invert(1) drop-shadow(0 2px 5px rgba(0,0,0,.25))}
-    .nav-links{display:flex;align-items:center;gap:clamp(15px,2vw,29px);padding:0;margin:0;list-style:none}
-    .nav-links a{position:relative;font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;font-weight:700;transition:color .2s}
-    .nav-links a:hover,.nav-links a.active{color:var(--gold2)}
-    .nav-links a.active:after{content:"";position:absolute;height:2px;background:var(--gold);left:0;right:0;bottom:-11px}
-    .nav-actions{display:flex;gap:16px;align-items:center;flex:none}
-    .nav-actions .btn{min-height:46px;padding:14px 18px;font-size:10px;gap:10px}
-    .menu-toggle{display:none;align-items:center;justify-content:center;background:transparent;border:1px solid rgba(255,255,255,.5);color:#fff;width:48px;height:48px}
-    .menu-toggle span,.menu-toggle span:before,.menu-toggle span:after{display:block;width:20px;height:2px;background:currentColor;position:relative;transition:transform .2s}
-    .menu-toggle span:before,.menu-toggle span:after{content:"";position:absolute;left:0}.menu-toggle span:before{top:-6px}.menu-toggle span:after{top:6px}
-    .menu-toggle[aria-expanded=true] span{background:transparent}
-    .menu-toggle[aria-expanded=true] span:before{transform:translateY(6px) rotate(45deg)}
-    .menu-toggle[aria-expanded=true] span:after{transform:translateY(-6px) rotate(-45deg)}
-    .hero{position:relative;min-height:850px;min-height:min(900px,100svh);display:flex;align-items:center;overflow:hidden;background:#1d2c33}
-    .hero-photo,.hero-shade{position:absolute;inset:0;width:100%;height:100%}
-    .hero-photo{object-fit:cover;object-position:center 48%;filter:saturate(.75)}
-    .hero-shade{background:linear-gradient(90deg,rgba(9,20,31,.88) 0%,rgba(9,20,31,.70) 37%,rgba(9,20,31,.22) 75%),linear-gradient(0deg,rgba(9,20,31,.56),transparent 30%,rgba(9,20,31,.2))}
-    .hero-content{position:relative;z-index:1;color:#fff;padding-top:135px;padding-bottom:140px}
-    .hero .eyebrow{margin-bottom:26px}
-    .hero h1{font-size:clamp(80px,9vw,155px);max-width:850px;line-height:.83}
-    .hero h1 .accent{color:var(--gold2)}
-    .hero-text{max-width:550px;font-size:17px;color:rgba(255,255,255,.83);line-height:1.8;margin:32px 0 30px}
-    .hero-ctas{display:flex;gap:13px;flex-wrap:wrap}
-    .hero-bottom{position:absolute;z-index:2;left:0;bottom:0;right:0;color:#fff;border-top:1px solid rgba(255,255,255,.23)}
-    .hero-bottom .container{display:flex;align-items:center;justify-content:space-between;min-height:76px;gap:30px}
-    .hero-bottom .micro{font-size:10px;text-transform:uppercase;letter-spacing:.22em;color:rgba(255,255,255,.85)}
-    .scroll-indicator{display:flex;gap:18px;align-items:center}
-    .scroll-indicator:after{content:"";display:block;width:10px;height:10px;border-right:1.5px solid var(--gold);border-bottom:1.5px solid var(--gold);transform:rotate(45deg);margin-top:-5px}
-    .mini-values{display:flex;gap:26px}.mini-values span+span:before{content:"";display:inline-block;width:4px;height:4px;background:var(--gold);border-radius:50%;margin:0 26px 2px 0}
-    .intro{background:var(--stone);padding:100px 0 102px}
-    .intro-grid{display:grid;grid-template-columns:1fr 1fr;align-items:center;gap:clamp(55px,8vw,150px)}
-    .intro h2{font-size:clamp(56px,6.3vw,105px);margin:25px 0 0}
-    .intro-right{border-left:1px solid rgba(16,29,44,.2);padding-left:60px}
-    .intro-right p{margin:0 0 26px}
-    .link-arrow{display:inline-flex;align-items:center;gap:16px;text-transform:uppercase;font-weight:700;font-size:11px;letter-spacing:.13em;border-bottom:1px solid var(--gold);padding-bottom:11px;transition:gap .2s}
-    .link-arrow:hover{gap:25px}
-    .services{padding:115px 0 125px}
-    .section-heading{display:flex;align-items:end;justify-content:space-between;gap:50px;margin-bottom:40px}
-    .section-heading h2{margin-top:24px}
-    .section-heading .intro-copy{max-width:400px;margin:0 0 4px}
-    .service-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:17px}
-    .service-card{position:relative;min-height:500px;overflow:hidden;background:#293845;color:#fff;display:flex;align-items:flex-end;isolation:isolate}
-    .service-card img,.project-card img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:-2;transition:transform .55s}
-    .service-card::before{content:"";position:absolute;inset:0;background:linear-gradient(to top,rgba(9,18,27,.96),rgba(9,18,27,.15) 68%);z-index:-1}
-    .service-card:hover img,.project-card:hover img{transform:scale(1.055)}
-    .service-content{padding:26px 24px 30px;width:100%}
-    .service-number{display:block;color:var(--gold2);font-size:11px;letter-spacing:.18em;margin-bottom:12px}
-    .service-content h3{font-family:var(--font-display);font-size:40px;font-weight:600;text-transform:uppercase;line-height:1;margin:0 0 13px}
-    .service-content p{font-size:12px;line-height:1.65;color:rgba(255,255,255,.75);margin:0 0 20px;max-width:230px}
-    .service-link{display:flex;justify-content:space-between;align-items:center;border-top:1px solid rgba(255,255,255,.24);padding-top:16px;color:#fff;font-size:10px;letter-spacing:.13em;text-transform:uppercase;font-weight:700}
-    .service-link span:last-child{font-size:20px;color:var(--gold2)}
-    .feature{background:var(--navy);color:#fff;padding:0;overflow:hidden}
-    .feature-inner{display:grid;grid-template-columns:1fr 1fr;min-height:700px}
-    .feature-photo{background:#283947;min-height:550px;position:relative}
-    .feature-photo img{width:100%;height:100%;object-fit:cover;position:absolute;inset:0}
-    .feature-photo:after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(16,29,44,.02),rgba(16,29,44,.14))}
-    .feature-content{display:flex;flex-direction:column;justify-content:center;padding:90px max(48px,calc((100vw - var(--max))/2)) 90px clamp(55px,6.5vw,120px)}
-    .feature h2{font-size:clamp(59px,6.5vw,103px);margin:25px 0}
-    .feature .copy{color:rgba(255,255,255,.72);font-size:15px;line-height:1.8;max-width:490px;margin:0 0 26px}
-    .feature-points{padding:0;margin:0;list-style:none;max-width:480px}
-    .feature-points li{border-top:1px solid rgba(255,255,255,.17);padding:19px 0;display:flex;gap:20px;align-items:baseline}
-    .feature-points .n{color:var(--gold);font-family:var(--font-display);font-size:23px}
-    .feature-points strong{display:block;font-size:13px;margin-bottom:5px}
-    .feature-points small{display:block;color:rgba(255,255,255,.60);line-height:1.7;font-size:12px}
-    .gallery{padding:120px 0 125px;background:var(--stone)}
-    .gallery-grid{display:grid;grid-template-columns:1.2fr .8fr;gap:18px}
-    .gallery-col{display:grid;grid-template-rows:1fr 1fr;gap:18px}
-    .project-card{isolation:isolate;position:relative;min-height:280px;background:#52606b;overflow:hidden}
-    .project-card.big{min-height:650px}
-    .project-card:before{content:"";position:absolute;z-index:-1;inset:0;background:linear-gradient(0deg,rgba(5,16,24,.8),transparent 47%)}
-    .project-label{position:absolute;bottom:27px;left:31px;color:#fff}
-    .project-label span{display:block;color:var(--gold2);font-size:10px;letter-spacing:.18em;text-transform:uppercase;margin-bottom:10px}
-    .project-label h3{font-family:var(--font-display);font-size:clamp(30px,3.3vw,48px);text-transform:uppercase;font-weight:600;line-height:.96;margin:0}
-    .gallery-note{display:flex;justify-content:space-between;gap:30px;align-items:center;margin-top:22px}
-    .gallery-note p{font-size:12px;color:var(--muted);max-width:630px;line-height:1.7;margin:0}
-    .process{padding:120px 0 125px;background:var(--cream)}
-    .process-heading{max-width:740px;margin-bottom:60px}
-    .process-heading h2{margin-top:25px}
-    .steps{display:grid;grid-template-columns:repeat(4,1fr);border-top:1px solid var(--line)}
-    .step{padding:35px 32px 20px 0;border-right:1px solid var(--line);margin-right:30px}
-    .step:last-child{border-right:0;margin-right:0}
-    .step .num{font-family:var(--font-display);font-weight:500;font-size:65px;line-height:1;color:var(--gold)}
-    .step h3{font-family:var(--font-display);font-size:33px;font-weight:600;text-transform:uppercase;margin:27px 0 10px;line-height:1.04}
-    .step p{font-size:13px;color:var(--muted);line-height:1.85;margin:0;max-width:275px}
-    .statement{position:relative;min-height:500px;color:#fff;display:flex;align-items:center;overflow:hidden;background:#283745}
-    .statement img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;filter:saturate(.78)}
-    .statement:before{content:"";position:absolute;inset:0;z-index:1;background:linear-gradient(90deg,rgba(9,19,30,.9),rgba(9,19,30,.6) 55%,rgba(9,19,30,.18))}
-    .statement-content{position:relative;z-index:2;padding:95px 0}
-    .statement h2{font-size:clamp(65px,7vw,117px);max-width:750px;margin:19px 0 28px}
-    .statement p{font-size:16px;line-height:1.8;max-width:480px;color:rgba(255,255,255,.76);margin:0 0 27px}
-    .faq{padding:115px 0 125px;background:var(--stone)}
-    .faq-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:clamp(70px,11vw,165px)}
-    .faq h2{font-size:clamp(57px,6vw,92px);margin:22px 0}
-    .faq-left p{font-size:14px;line-height:1.85;color:var(--muted);max-width:345px;margin-bottom:26px}
-    details{border-bottom:1px solid rgba(16,29,44,.18)}
-    details:first-child{border-top:1px solid rgba(16,29,44,.18)}
-    details summary{list-style:none;cursor:pointer;display:flex;justify-content:space-between;gap:25px;align-items:center;padding:25px 0;font-size:14px;font-weight:700;color:var(--ink)}
-    details summary::-webkit-details-marker{display:none}
-    details summary::after{content:"";width:10px;height:10px;border-right:1.5px solid var(--gold);border-bottom:1.5px solid var(--gold);transform:rotate(45deg);transition:transform .2s;flex:none;margin-right:5px}
-    details[open] summary::after{transform:rotate(225deg)}
-    details p{font-size:13px;color:var(--muted);line-height:1.85;margin:-4px 45px 26px 0}
-    .contact{background:var(--navy);color:#fff;padding:115px 0 110px;position:relative;overflow:hidden}
-    .contact:before{content:"LR";font-family:Georgia,serif;font-size:min(47vw,800px);position:absolute;right:-60px;top:-230px;letter-spacing:-.1em;color:rgba(255,255,255,.018);pointer-events:none}
-    .contact-grid{position:relative;display:grid;grid-template-columns:1fr .9fr;gap:clamp(70px,10vw,165px)}
-    .contact h2{font-size:clamp(75px,8vw,130px);margin:22px 0}
-    .contact p{max-width:470px;font-size:16px;line-height:1.85;color:rgba(255,255,255,.73);margin-bottom:35px}
-    .contact-detail{border-top:1px solid rgba(255,255,255,.18);padding:22px 0;display:flex;justify-content:space-between;gap:20px;max-width:450px;align-items:center}
-    .contact-detail span:first-child{font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--gold2)}
-    .contact-detail span:last-child{font-size:13px}
-    .quote-panel{padding:37px;background:var(--stone);color:var(--ink);align-self:center}
-    .quote-panel h3{font-family:var(--font-display);font-weight:600;text-transform:uppercase;font-size:43px;margin:0 0 8px}
-    .quote-panel>p{font-size:12px;color:var(--muted);margin:0 0 24px}
-    .field-grid{display:grid;grid-template-columns:1fr 1fr;gap:13px}
-    .field{display:flex;flex-direction:column;gap:8px;margin-bottom:14px}
-    .field label{font-size:10px;text-transform:uppercase;letter-spacing:.13em;font-weight:700}
-    .field input,.field select,.field textarea{width:100%;padding:13px 12px;min-height:45px;border:1px solid rgba(16,29,44,.18);border-radius:0;background:#fff;color:var(--ink);font-size:13px;outline:none;appearance:none}
-    .field input:focus,.field select:focus,.field textarea:focus{border-color:var(--gold);box-shadow:0 0 0 2px rgba(195,154,89,.14)}
-    .field textarea{resize:vertical;min-height:82px}
-    .form-submit{width:100%;gap:12px;justify-content:space-between}
-    .form-note{font-size:11px;color:var(--muted);line-height:1.65;margin:12px 0 0}
-    .form-feedback{font-size:12px;line-height:1.6;color:var(--navy);margin-top:13px;display:none}
-    .form-feedback.visible{display:block}
-    .footer{background:#0b1724;color:#fff;border-top:1px solid rgba(255,255,255,.1);padding:53px 0 30px}
-    .footer-top{display:flex;justify-content:space-between;align-items:center;gap:35px;padding-bottom:52px}
-    .footer-brand{display:flex;align-items:center;gap:17px}
-    .footer-brand img{height:66px;width:170px;object-fit:contain;background:transparent;padding:0;filter:brightness(0) invert(1)}
-    .footer-tagline{font-size:12px;line-height:1.75;color:rgba(255,255,255,.62);max-width:320px;margin:0}
-    .footer-nav{display:flex;gap:27px;flex-wrap:wrap}
-    .footer-nav a{font-size:10px;letter-spacing:.12em;text-transform:uppercase;color:rgba(255,255,255,.75)}
-    .footer-nav a:hover{color:var(--gold2)}
-    .footer-bottom{border-top:1px solid rgba(255,255,255,.12);padding-top:25px;display:flex;justify-content:space-between;align-items:center;gap:20px;color:rgba(255,255,255,.45);font-size:11px}
-    .bottom-cta{display:none}
-    .modal{display:none;position:fixed;inset:0;z-index:100;align-items:center;justify-content:center;padding:18px;background:rgba(5,13,22,.77);backdrop-filter:blur(7px);overflow:auto}
-    .modal.open{display:flex}
-    .modal-box{max-width:555px;width:100%;position:relative;max-height:calc(100vh - 36px);overflow:auto}
-    .modal .quote-panel{padding:36px}
-    .modal-close{position:absolute;right:10px;top:8px;z-index:1;width:38px;height:38px;background:transparent;border:0;font-size:31px;color:var(--navy)}
-    .skip-link{position:absolute;left:14px;top:-50px;z-index:200;background:#fff;color:#111;padding:12px}.skip-link:focus{top:10px}
-    @media(max-width:1200px){
-      .container{width:min(var(--max),calc(100% - 72px))}
-      .nav{gap:17px}
-      .nav-links{gap:15px}
-      .nav-links a{font-size:9.5px}
-      .nav-actions .btn{padding:13px 14px}
-      .service-content{padding:24px 17px}.service-content h3{font-size:35px}
-      .feature-content{padding-left:65px;padding-right:50px}
-    }
-    @media(max-width:980px){
-      .nav{min-height:89px}
-      .brand img{width:125px;height:45px}
-      .nav-links{display:none;position:absolute;top:89px;left:0;right:0;background:var(--navy);padding:25px 36px 35px;box-shadow:0 25px 50px rgba(0,0,0,.16);z-index:29;flex-direction:column;align-items:stretch;gap:0;border-top:1px solid rgba(255,255,255,.15)}
-      .nav-links.open{display:flex}
-      .nav-links li a{display:block;padding:13px 2px;font-size:12px}
-      .nav-links a.active:after{display:none}
-      .menu-toggle{display:flex}
-      .service-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
-      .service-card{min-height:435px}
-      .feature-inner{grid-template-columns:1fr 1fr}.feature-content{padding:65px 40px}
-      .feature-photo{min-height:570px}
-      .steps{grid-template-columns:repeat(2,1fr);row-gap:22px}
-      .step:nth-child(2){border-right:0}
-      .contact-grid{gap:45px}
-      .quote-panel{padding:27px}
-      .faq-grid{gap:70px}
-    }
-    @media(max-width:700px){
-      html{scroll-padding-top:75px}
-      .container{width:calc(100% - 40px)}
-      .nav{min-height:76px;gap:10px}
-      .brand{padding:0}
-      .brand img{width:106px;height:43px}
-      .nav-actions .btn{display:none}
-      .menu-toggle{width:43px;height:43px}
-      .nav-links{top:76px;padding:17px 20px 28px}
-      .hero{min-height:740px;min-height:93svh;max-height:920px}
-      .hero-photo{object-position:59% center}
-      .hero-shade{background:linear-gradient(90deg,rgba(9,20,31,.87),rgba(9,20,31,.47)),linear-gradient(0deg,rgba(9,20,31,.48),transparent 45%)}
-      .hero-content{padding-top:132px;padding-bottom:124px}
-      .hero h1{font-size:clamp(72px,16vw,117px);max-width:650px;line-height:.86}
-      .hero .eyebrow{font-size:10px;letter-spacing:.16em;margin-bottom:20px}
-      .hero-text{font-size:14px;line-height:1.8;max-width:370px;margin:26px 0}
-      .hero-ctas{gap:10px}
-      .btn{padding:16px 17px;min-height:50px;font-size:10px;gap:12px}
-      .hero-bottom .container{min-height:59px}
-      .hero-bottom .micro{font-size:9px}
-      .mini-values{display:none}
-      .intro{padding:82px 0}
-      .intro-grid{grid-template-columns:1fr;gap:29px}
-      .intro h2{font-size:clamp(66px,15vw,97px)}
-      .intro-right{border-left:none;border-top:1px solid var(--line);padding:22px 0 0}
-      .intro-right p{font-size:15px;line-height:1.85}
-      .services,.gallery,.process,.faq{padding:78px 0 84px}
-      .section-heading{display:block;margin-bottom:29px}
-      .section-heading .intro-copy{margin-top:24px}
-      .section-title{font-size:clamp(63px,12vw,88px)}
-      .service-grid{gap:12px}
-      .service-card{min-height:370px}
-      .service-content{padding:20px 16px}
-      .service-content h3{font-size:33px}
-      .service-content p{font-size:11px;margin-bottom:14px}
-      .service-link{font-size:9px}
-      .feature-inner{grid-template-columns:1fr}
-      .feature-photo{height:380px;min-height:0}
-      .feature-content{padding:75px 20px 70px}
-      .feature h2{font-size:clamp(67px,14vw,95px)}
-      .gallery-grid{grid-template-columns:1fr}
-      .project-card.big{min-height:450px}
-      .project-card{min-height:250px}
-      .gallery-col{grid-template-columns:1fr 1fr;grid-template-rows:1fr}
-      .gallery-note{align-items:flex-start;flex-direction:column;gap:17px}
-      .process-heading{margin-bottom:35px}
-      .steps{grid-template-columns:1fr 1fr}
-      .step{padding:26px 18px 15px 0;margin-right:17px}
-      .step .num{font-size:56px}
-      .step h3{font-size:29px;margin-top:16px}
-      .step p{font-size:12px}
-      .statement{min-height:490px}
-      .statement-content{padding:73px 0}
-      .statement h2{font-size:clamp(68px,13vw,94px)}
-      .faq-grid,.contact-grid{grid-template-columns:1fr;gap:38px}
-      .faq h2{font-size:75px}
-      .faq-left p{max-width:530px}
-      .contact{padding:80px 0}
-      .contact h2{font-size:clamp(80px,15vw,112px)}
-      .quote-panel{padding:24px}
-      .footer{padding:40px 0 100px}
-      .footer-top{align-items:start;flex-direction:column;padding-bottom:33px;gap:28px}
-      .footer-brand img{width:132px;height:55px}
-      .footer-bottom{flex-direction:column;align-items:start;gap:8px}
-      .bottom-cta{display:flex;position:fixed;inset:auto 0 0;z-index:24;padding:9px 14px calc(9px + env(safe-area-inset-bottom));background:var(--navy);border-top:1px solid rgba(255,255,255,.15)}
-      .bottom-cta .btn{width:100%;min-height:49px;font-size:11px}
-      .modal{align-items:center}
-      .modal .quote-panel{padding:25px 20px}
-    }
-    @media(max-width:420px){
-      .hero h1{font-size:clamp(65px,16vw,80px)}
-      .hero-ctas .btn{width:100%;justify-content:space-between}
-      .service-grid{grid-template-columns:1fr}
-      .service-card{min-height:375px}
-      .service-content{padding:24px}
-      .service-content h3{font-size:41px}
-      .gallery-col{grid-template-columns:1fr;grid-template-rows:1fr 1fr}
-      .project-card{min-height:250px}
-      .steps{grid-template-columns:1fr}
-      .step,.step:nth-child(2){border-right:0;margin-right:0;border-bottom:1px solid var(--line)}
-      .field-grid{grid-template-columns:1fr;gap:0}
-      .contact-detail{align-items:start;flex-direction:column;gap:9px}
-      .footer-nav{gap:17px}
-      .modal .quote-panel{padding:22px 16px}
-    }
-    @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{animation-duration:.01ms!important;transition-duration:.01ms!important}}
-  </style>
-  <script type="application/ld+json">{"@context":"https://schema.org","@type":"GeneralContractor","name":"Loyal Renovations","description":"Residential renovation and remodeling services focused on kitchens, bathrooms, and whole-home transformations.","logo":"https://assets.cdn.filesafe.space/bF1dT8IAVuvat84LkAVe/media/6ad22a46989628c77a1f730b.png"}</script>
+  <link rel="stylesheet" href="/assets/style.css">
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"GeneralContractor","name":"Loyal Renovations","url":"https://loyal-renovations.vercel.app/","description":"Residential kitchen, bathroom, and whole-home renovation services","logo":"https://assets.cdn.filesafe.space/bF1dT8IAVuvat84LkAVe/media/6ad22a46989628c77a1f730b.png"}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","name":"Loyal Renovations","url":"https://loyal-renovations.vercel.app/"}</script>
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
   <header class="site-header">
     <div class="container">
       <nav class="nav" aria-label="Primary navigation">
-        <a class="brand" href="#home" aria-label="Loyal Renovations home"><img src="https://assets.cdn.filesafe.space/bF1dT8IAVuvat84LkAVe/media/6ad22a46989628c77a1f730b.png" alt="Loyal Renovations" width="135" height="52"></a>
+        <a class="brand" href="/" aria-label="Loyal Renovations home"><img src="https://assets.cdn.filesafe.space/bF1dT8IAVuvat84LkAVe/media/6ad22a46989628c77a1f730b.png" alt="Loyal Renovations" width="135" height="52"></a>
         <ul class="nav-links" id="nav-links">
-          <li><a class="active" href="#home">Home</a></li>
-          <li><a href="#about">Our Story</a></li>
-          <li><a href="#services">Services</a></li>
-          <li><a href="#inspiration">Inspiration</a></li>
-          <li><a href="#process">Our Process</a></li>
-          <li><a href="#faq">FAQ</a></li>
-          <li><a href="#contact">Contact</a></li>
+          <li><a class="active" href="/">Home</a></li>
+          <li><a href="/about/">Our Story</a></li>
+          <li><a href="/services/">Services</a></li>
+          <li><a href="/projects/">Inspiration</a></li>
+          <li><a href="/process/">Our Process</a></li>
+          <li><a href="/faq/">FAQ</a></li>
+          <li><a href="/contact/">Contact</a></li>
         </ul>
         <div class="nav-actions"><button class="btn btn-gold" data-open-quote>Get a Free Consultation <span class="arrow" aria-hidden="true"><svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 19 19 5M9 5h10v10"/></svg></span></button><button type="button" class="menu-toggle" id="menu-toggle" aria-label="Open navigation" aria-controls="nav-links" aria-expanded="false"><span></span></button></div>
       </nav>
@@ -331,7 +54,7 @@
         <p class="hero-text">More than a renovation. A space designed around your life, your style, and everything that matters to you.</p>
         <div class="hero-ctas">
           <button type="button" class="btn btn-gold" data-open-quote>Start Your Project <span class="arrow" aria-hidden="true"><svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 19 19 5M9 5h10v10"/></svg></span></button>
-          <a class="btn btn-outline" href="#services">Explore Our Services <span class="arrow" aria-hidden="true"><svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M4 12h16m-7-7 7 7-7 7"/></svg></span></a>
+          <a class="btn btn-outline" href="/services/">Explore Our Services <span class="arrow" aria-hidden="true"><svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M4 12h16m-7-7 7 7-7 7"/></svg></span></a>
         </div>
       </div>
       <div class="hero-bottom">
@@ -350,7 +73,7 @@
         <div class="intro-right">
           <p class="intro-copy">A home should reflect the people who live in it. We believe the best renovations begin with listening, take shape through thoughtful planning, and come together in the smallest details.</p>
           <p class="intro-copy">From a kitchen that brings everyone together to a bathroom that feels like a retreat, we approach every space with care and a clear vision.</p>
-          <a class="link-arrow" href="#process">Get to know our approach <span aria-hidden="true"><svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 19 19 5M9 5h10v10"/></svg></span></a>
+          <a class="link-arrow" href="/process/">Get to know our approach <span aria-hidden="true"><svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 19 19 5M9 5h10v10"/></svg></span></a>
         </div>
       </div>
     </section>
@@ -363,19 +86,19 @@
         <div class="service-grid">
           <article class="service-card">
             <img loading="lazy" src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&amp;fit=crop&amp;w=800&amp;q=80" alt="Contemporary kitchen design inspiration">
-            <div class="service-content"><span class="service-number">01 / RENOVATIONS</span><h3>Kitchen<br>Remodeling</h3><p>Well-designed kitchens built for gathering, cooking, and everyday living.</p><a class="service-link" href="#contact">Discuss your kitchen <span aria-hidden="true"><svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 19 19 5M9 5h10v10"/></svg></span></a></div>
+            <div class="service-content"><span class="service-number">01 / RENOVATIONS</span><h3>Kitchen<br>Remodeling</h3><p>Well-designed kitchens built for gathering, cooking, and everyday living.</p><a class="service-link" href="/services/kitchen-remodeling/">Explore kitchen remodeling <span aria-hidden="true"><svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 19 19 5M9 5h10v10"/></svg></span></a></div>
           </article>
           <article class="service-card">
             <img loading="lazy" src="https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?auto=format&amp;fit=crop&amp;w=800&amp;q=80" alt="Elevated bathroom design inspiration">
-            <div class="service-content"><span class="service-number">02 / RENOVATIONS</span><h3>Bathroom<br>Remodeling</h3><p>Thoughtfully finished bathrooms with comfort in every detail.</p><a class="service-link" href="#contact">Discuss your bathroom <span aria-hidden="true"><svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 19 19 5M9 5h10v10"/></svg></span></a></div>
+            <div class="service-content"><span class="service-number">02 / RENOVATIONS</span><h3>Bathroom<br>Remodeling</h3><p>Thoughtfully finished bathrooms with comfort in every detail.</p><a class="service-link" href="/services/bathroom-remodeling/">Explore bathroom remodeling <span aria-hidden="true"><svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 19 19 5M9 5h10v10"/></svg></span></a></div>
           </article>
           <article class="service-card">
             <img loading="lazy" src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&amp;fit=crop&amp;w=800&amp;q=80" alt="Open-plan living space design inspiration">
-            <div class="service-content"><span class="service-number">03 / RENOVATIONS</span><h3>Whole-Home<br>Renovations</h3><p>Cohesive transformations that make your home feel new again.</p><a class="service-link" href="#contact">Discuss your home <span aria-hidden="true"><svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 19 19 5M9 5h10v10"/></svg></span></a></div>
+            <div class="service-content"><span class="service-number">03 / RENOVATIONS</span><h3>Whole-Home<br>Renovations</h3><p>Cohesive transformations that make your home feel new again.</p><a class="service-link" href="/services/whole-home-renovations/">Explore whole-home renovations <span aria-hidden="true"><svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 19 19 5M9 5h10v10"/></svg></span></a></div>
           </article>
           <article class="service-card">
             <img loading="lazy" src="https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&amp;fit=crop&amp;w=800&amp;q=80" alt="Beautifully finished interior space design inspiration">
-            <div class="service-content"><span class="service-number">04 / RENOVATIONS</span><h3>Interior<br>Upgrades</h3><p>Refined finishes, refreshed rooms, and spaces that work harder for you.</p><a class="service-link" href="#contact">Discuss your ideas <span aria-hidden="true"><svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 19 19 5M9 5h10v10"/></svg></span></a></div>
+            <div class="service-content"><span class="service-number">04 / RENOVATIONS</span><h3>Interior<br>Upgrades</h3><p>Refined finishes, refreshed rooms, and spaces that work harder for you.</p><a class="service-link" href="/services/interior-upgrades/">Explore interior upgrades <span aria-hidden="true"><svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 19 19 5M9 5h10v10"/></svg></span></a></div>
           </article>
         </div>
       </div>
@@ -428,7 +151,7 @@
     </section>
     <section class="faq" id="faq">
       <div class="container faq-grid">
-        <div class="faq-left"><div class="eyebrow line gold">Common questions</div><h2 class="display">GOOD<br>QUESTIONS.<br><span style="color:var(--gold)">CLEAR<br>ANSWERS.</span></h2><p>Renovating is a big decision. We want you to feel informed and comfortable from the first conversation onward.</p><a class="link-arrow" href="#contact">Ask us directly <span aria-hidden="true"><svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 19 19 5M9 5h10v10"/></svg></span></a></div>
+        <div class="faq-left"><div class="eyebrow line gold">Common questions</div><h2 class="display">GOOD<br>QUESTIONS.<br><span style="color:var(--gold)">CLEAR<br>ANSWERS.</span></h2><p>Renovating is a big decision. We want you to feel informed and comfortable from the first conversation onward.</p><a class="link-arrow" href="/contact/">Ask us directly <span aria-hidden="true"><svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 19 19 5M9 5h10v10"/></svg></span></a></div>
         <div>
           <details><summary>What types of renovation projects do you take on?</summary><p>We're building our work around residential projects including kitchen remodeling, bathroom updates, interior improvements, and larger home renovations. Share your project scope and we'll discuss whether it's a good fit.</p></details>
           <details><summary>How do I get started?</summary><p>Start with the consultation form below. Tell us a little about your home and what you want to change, and we can begin discussing the right next steps.</p></details>
@@ -448,9 +171,9 @@
             <div class="field-grid"><div class="field"><label for="phone-main">Phone number *</label><input id="phone-main" name="phone" type="tel" autocomplete="tel" placeholder="(555) 000-0000" required></div><div class="field"><label for="location-main">Project location *</label><input id="location-main" name="location" type="text" autocomplete="address-level2" placeholder="Town or ZIP code" required></div></div>
             <div class="field"><label for="service-main">What are you planning? *</label><select id="service-main" name="service" required><option value="">Select a project type</option><option>Kitchen remodeling</option><option>Bathroom remodeling</option><option>Whole-home renovation</option><option>Interior upgrades</option><option>Something else</option></select></div>
             <div class="field"><label for="details-main">Tell us about your vision</label><textarea id="details-main" name="details" placeholder="Share a few details about your project..."></textarea></div>
-            <button class="btn btn-navy form-submit" type="submit">Continue to email your request <span class="arrow" aria-hidden="true"><svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 19 19 5M9 5h10v10"/></svg></span></button>
-            <p class="form-note">The form opens your email app with your details filled in. Please send the email there to complete your inquiry. No information is transmitted by this website before you do.</p>
-            <div class="form-feedback" role="status" aria-live="polite"></div>
+            <button class="btn btn-navy form-submit" type="submit">Send My Request <span class="arrow" aria-hidden="true"><svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 19 19 5M9 5h10v10"/></svg></span></button>
+            <p class="form-note">We use your details to respond to your renovation inquiry.</p>
+            <div class="honeypot-field" aria-hidden="true"><label>Website <input type="text" name="website" tabindex="-1" autocomplete="off"></label></div><div class="form-feedback" role="status" aria-live="polite"></div>
           </form>
         </div>
       </div>
@@ -459,8 +182,8 @@
   <footer class="footer">
     <div class="container">
       <div class="footer-top">
-        <div><a class="footer-brand" href="#home"><img src="https://assets.cdn.filesafe.space/bF1dT8IAVuvat84LkAVe/media/6ad22a46989628c77a1f730b.png" alt="Loyal Renovations"></a><p class="footer-tagline" style="margin-top:16px">Beautifully considered. Built to last.<br>Thoughtful renovation for the spaces that matter most.</p></div>
-        <nav class="footer-nav" aria-label="Footer navigation"><a href="#about">Our Story</a><a href="#services">Services</a><a href="#inspiration">Inspiration</a><a href="#process">Process</a><a href="#faq">FAQ</a><a href="#contact">Contact</a></nav>
+        <div><a class="footer-brand" href="/"><img src="https://assets.cdn.filesafe.space/bF1dT8IAVuvat84LkAVe/media/6ad22a46989628c77a1f730b.png" alt="Loyal Renovations"></a><p class="footer-tagline" style="margin-top:16px">Beautifully considered. Built to last.<br>Thoughtful renovation for the spaces that matter most.</p></div>
+        <nav class="footer-nav" aria-label="Footer navigation"><a href="/about/">Our Story</a><a href="/services/">Services</a><a href="/projects/">Inspiration</a><a href="/process/">Process</a><a href="/faq/">FAQ</a><a href="/contact/">Contact</a></nav>
       </div>
       <div class="footer-bottom"><span>© <span id="year">2026</span> Loyal Renovations. All rights reserved.</span><span>Thoughtful spaces. Lasting impressions.</span></div>
     </div>
@@ -474,44 +197,11 @@
           <div class="field-grid"><div class="field"><label for="phone-modal">Phone number *</label><input id="phone-modal" name="phone" type="tel" autocomplete="tel" placeholder="(555) 000-0000" required></div><div class="field"><label for="location-modal">Project location *</label><input id="location-modal" name="location" type="text" autocomplete="address-level2" placeholder="Town or ZIP" required></div></div>
           <div class="field"><label for="service-modal">What are you planning? *</label><select id="service-modal" name="service" required><option value="">Select a project type</option><option>Kitchen remodeling</option><option>Bathroom remodeling</option><option>Whole-home renovation</option><option>Interior upgrades</option><option>Something else</option></select></div>
           <div class="field"><label for="details-modal">Tell us about your vision</label><textarea id="details-modal" name="details" placeholder="A little about your project..."></textarea></div>
-          <button class="btn btn-navy form-submit" type="submit">Continue to email your request <span class="arrow" aria-hidden="true"><svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 19 19 5M9 5h10v10"/></svg></span></button><p class="form-note">This opens your email app with your inquiry filled in. Please send it to finish submitting.</p><div class="form-feedback" role="status" aria-live="polite"></div>
+          <button class="btn btn-navy form-submit" type="submit">Send My Request <span class="arrow" aria-hidden="true"><svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 19 19 5M9 5h10v10"/></svg></span></button><p class="form-note">We use your details to respond to your renovation inquiry.</p><div class="honeypot-field" aria-hidden="true"><label>Website <input type="text" name="website" tabindex="-1" autocomplete="off"></label></div><div class="form-feedback" role="status" aria-live="polite"></div>
         </form>
       </div>
     </div>
   </div>
-  <script>
-    (function(){
-      "use strict";
-      var year=document.getElementById("year"); if(year)year.textContent=new Date().getFullYear();
-      var menu=document.getElementById("menu-toggle"),links=document.getElementById("nav-links");
-      function closeMenu(){links.classList.remove("open");menu.setAttribute("aria-expanded","false");menu.setAttribute("aria-label","Open navigation");}
-      menu.addEventListener("click",function(){var open=links.classList.toggle("open");menu.setAttribute("aria-expanded",open?"true":"false");menu.setAttribute("aria-label",open?"Close navigation":"Open navigation");});
-      links.querySelectorAll("a").forEach(function(a){a.addEventListener("click",closeMenu);});
-      var modal=document.getElementById("quote-modal"),closeBtn=document.getElementById("modal-close"),lastFocus=null;
-      function closeQuote(){modal.classList.remove("open");modal.setAttribute("aria-hidden","true");document.body.classList.remove("locked");if(lastFocus&&lastFocus.focus)lastFocus.focus();}
-      function openQuote(){lastFocus=document.activeElement;closeMenu();modal.classList.add("open");modal.setAttribute("aria-hidden","false");document.body.classList.add("locked");window.setTimeout(function(){var inp=modal.querySelector("input");if(inp)inp.focus();},50);}
-      document.querySelectorAll("[data-open-quote]").forEach(function(b){b.addEventListener("click",openQuote);});
-      closeBtn.addEventListener("click",closeQuote);
-      modal.addEventListener("click",function(e){if(e.target===modal)closeQuote();});
-      document.addEventListener("keydown",function(e){if(e.key==="Escape"){if(modal.classList.contains("open"))closeQuote();else closeMenu();}if(e.key==="Tab"&&modal.classList.contains("open")){var els=Array.prototype.slice.call(modal.querySelectorAll("button:not([disabled]),input:not([disabled]),select:not([disabled]),textarea:not([disabled]),a[href]"));var first=els[0],last=els[els.length-1];if(e.shiftKey&&document.activeElement===first){e.preventDefault();last.focus();}else if(!e.shiftKey&&document.activeElement===last){e.preventDefault();first.focus();}}});
-      document.querySelectorAll(".inquiry-form").forEach(function(form){
-        form.addEventListener("submit",function(e){
-          e.preventDefault();
-          if(!form.reportValidity())return;
-          var fd=new FormData(form);
-          var value=function(k){return String(fd.get(k)||"").trim();};
-          var subject="New Loyal Renovations Inquiry - "+value("name");
-          var body="NEW LOYAL RENOVATIONS PROJECT INQUIRY\n\nName: "+value("name")+"\nEmail: "+value("email")+"\nPhone: "+value("phone")+"\nProject location: "+value("location")+"\nProject type: "+value("service")+"\n\nProject details:\n"+(value("details")||"Not provided")+"\n\nSent via Loyal Renovations website.";
-          var link="mailto:asher.igniteco@gmail.com?subject="+encodeURIComponent(subject)+"&body="+encodeURIComponent(body);
-          var feedback=form.querySelector(".form-feedback");
-          feedback.textContent="Your email app should open now. Please press Send there to submit your inquiry. If it does not open, email asher.igniteco@gmail.com directly.";
-          feedback.classList.add("visible");
-          window.location.href=link;
-        });
-      });
-      var sections=[].slice.call(document.querySelectorAll("main section[id]"));
-      if("IntersectionObserver" in window){var obs=new IntersectionObserver(function(entries){entries.forEach(function(e){if(e.isIntersecting){var id=e.target.id;document.querySelectorAll(".nav-links a").forEach(function(a){a.classList.toggle("active",a.getAttribute("href")==="#"+id);});}});},{rootMargin:"-25% 0px -68% 0px"});sections.forEach(function(s){obs.observe(s);});}
-    })();
-  </script>
+  <script src="/assets/site.js" defer></script>
 </body>
 </html>
