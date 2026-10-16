@@ -2,7 +2,8 @@
     :root{--navy:#101d2c;--navy2:#162739;--navy3:#213346;--gold:#c39a59;--gold2:#e0b979;--stone:#f3f0ea;--cream:#fcfaf6;--ink:#192737;--muted:#61707a;--line:rgba(16,29,44,.13);--white:#fff;--font-display:"Barlow Condensed",Impact,"Arial Narrow",sans-serif;--font-body:"DM Sans",Arial,sans-serif;--max:1330px}
     *,*::before,*::after{box-sizing:border-box}
     html{scroll-behavior:smooth;scroll-padding-top:88px;background:#101d2c}
-    body{margin:0;background:var(--cream);color:var(--ink);font-family:var(--font-body);-webkit-font-smoothing:antialiased}
+    body{margin:0;background:var(--navy);color:var(--ink);font-family:var(--font-body);-webkit-font-smoothing:antialiased}
+    main{background:var(--cream)}
     body.locked{overflow:hidden}
     a{color:inherit;text-decoration:none}
     button,input,select,textarea{font:inherit}
