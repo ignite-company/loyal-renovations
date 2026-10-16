@@ -8,9 +8,9 @@ module.exports = async (req,res) => {
  if(req.headers.origin){try{if(new URL(req.headers.origin).hostname!==host)return res.status(403).json({ok:false,message:"Invalid request origin"});}catch(_){return res.status(403).json({ok:false,message:"Invalid request origin"});}}
  const len=Number(req.headers["content-length"]||0);
  if(len>12000)return res.status(413).json({ok:false,message:"Request too large"});
- const data=typeof req.body==="string"?JSON.parse(req.body||"{}"):(req.body||{});
+ let data;try{data=typeof req.body==="string"?JSON.parse(req.body||"{}"):(req.body||{});}catch(_){return res.status(400).json({ok:false,message:"Invalid request body"});}
  const get=(key,cap)=>typeof data[key]==="string"?data[key].trim().slice(0,cap):"";
- const name=get("name",100),email=get("email",180),phone=get("phone",60),location=get("location",130),service=get("service",80),details=get("details",3000),website=get("website",200);
+ const name=get("name",100).replace(/[\r\n]/g," "),email=get("email",180),phone=get("phone",60),location=get("location",130),service=get("service",80),details=get("details",3000),website=get("website",200);
  if(website)return res.status(200).json({ok:true});
  const allowed=new Set(["Kitchen remodeling","Bathroom remodeling","Whole-home renovation","Interior upgrades","Something else"]);
  if(!name||!email||!phone||!location||!allowed.has(service)||!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)){return res.status(422).json({ok:false,message:"Please complete all required fields"});}
